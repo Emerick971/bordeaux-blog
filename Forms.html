@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--integration Font awesome-->
+    <script src="https://kit.fontawesome.com/e9d6186a74.js" crossorigin="anonymous"></script>
+
+    <!--integration boostrap jQuery-->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="jquery-3.5.1.min.js"></script>
+
+    <link rel="stylesheet" href="bootstrap-4.5.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+
+    <!--integration style.css-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--integration Google Fonts-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,500&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Création du Menu -->
+    <nav class="container-fluid">
+        <div class="navbar-header container">
+            <a class="navbar-brand" href="index.html"><img src="images/logoBdo.png" id="logo"></a>
+            <!-- Collapse button -->
+            <button id="burger" class="navbar-toggler toggler-example" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="dark-blue-text"><i
+                        class="fas fa-bars fa-1x"></i></span></button>
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+
+                <!-- Links -->
+                <ul class="nav justify-content-center navbar-nav mr-auto">
+                    <li class="nav-item nav-item active">
+                        <a class="nav-link" href="index.html">Accueil<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#vin">Vin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gastro">Gastronomie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#lieux">Lieux incontournables</a>
+                    </li>
+                </ul>
+                <form class="form-inline nav-item">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="Forms.html">Nous
+                            contacter</a></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <!--Div de la page entière-->
+
+        <div id="divTitleContact">
+            <!--Div du titre-->
+            <p class="emoji">✉️</p> 
+            <h2 class="texteRed">Contact</h2>
+            <p>Si vous avez la moindre question sur les bons plans ou si vous souhaitez être référencé sur le site, n'hésitez pas à nous contacter via le formulaire ci-dessous.</p>
+        </div>
+        
+        <div id="divFormsContactAdressMap" class="row">
+            <!--Div du form + du contact + de la MapGoogle de la page-->
+            <form class="col"><!--Formulaire de contact à gauche de la page-->
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Nom</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Doe">
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">Prénom</div>
+                    </div>
+                    <input type="text" class="form-control" placeholder="John">
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">Email</div>
+                    </div>
+                    <input type="emails" class="form-control" placeholder="exemple@mail.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="inputType">Vous êtes :</label>
+                    <select id="inputType" class="form-control">
+                      <option selected>Choisissez</option>
+                      <option>Touriste</option>
+                      <option>Professionnel</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="inputMessage">Votre message :</label>
+                    <textarea class="form-control" id="inputMessage" rows="6"></textarea>
+                </div>
+
+                <button id="btnForm" type="submit" class="btnNeg">Envoyer</button>
+            </form>
+            <div id="divContactAdressMap" class="col">
+                <!--Div droite de la page-->
+                <h2 class="texteRed">Nous retrouver</h2>
+                <div id="divContactMap">
+                    <p>Wild Code School <br> 02.11.03.44.05 <br> bordeaux@exemple.fr</p> 
+                    <!--Div droite de la map Google-->
+                    <iframe id="mapG"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2829.030000776241!2d-0.563099884554328!3d44.84132238280889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5527cba74d1bdf%3A0xb92bcdcad0920688!2sWild%20Code%20School%2C%20Formation%20d%C3%A9veloppeur%20web%20%26%20data%20analyst!5e0!3m2!1sfr!2sfr!4v1605365996204!5m2!1sfr!2sfr"
+                        height="300" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+        </div>             
+        <div id="divTeam">
+            <!--Div de la partie team-->
+            <div id="divTitleTeam">
+            <h2 class="texteRed">En savoir plus sur l'équipe</h2>
+            </div>
+            <div id="divTeamCards">
+                <div class="team">
+                    <!--Div de la card Emerick-->
+                    <div class="teamImages">
+                        <img class="teamImagesRec" id="recadrageEmerick" src="images/Emerick.jpg" alt="Emerick">
+                    </div>
+
+                    <h3>Emerick</h3>
+                    <p>Chef de projet</p>
+                </div>
+
+                <div class="team">
+                    <!--Div de la card Mayté-->
+                    <div class="teamImages">
+                        <img class="teamImagesSquare" src="images/May.png" alt="Mayté">
+                    </div>
+
+                    <h3>Mayté</h3>
+                    <p>Designer</p>
+                </div>
+
+                <div class="team">
+                    <!--Div de la card Nathalie-->
+                    <div class="teamImages">
+                        <img class="teamImagesSquare" src="images/Nathalie.jpg" alt="Nathalie">
+                    </div>
+
+                    <h3>Nathalie</h3>
+                    <p>Cheffe de projet</p>
+                </div>
+
+                <div class="team">
+                    <!--Div de la card Clara-->
+                    <div class="teamImages">
+                        <img class="teamImagesRec" src="images/Clara.jpg" alt="Clara">
+                    </div>
+
+                    <h3>Clara</h3>
+                    <p>Cheffe de projet</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--Start footer-->
+    <footer>
+        <div id="footerChild1">
+
+            <img id="footerLogo" src="images/logoBdo.png" alt="Logo">
+
+            <ul id="footerFollow">
+                <h3>Suivez-nous</h3>
+                <li><a href="#" alt="Lorem"><i class="fab fa-facebook-f"></i><span class="rs">Facebook</span></a></li>
+                <li><a href="#" alt="Lorem"><i class="fab fa-twitter"></i><span class="rs">Twitter</span></a></li>
+                <li><a href="#" alt="Lorem"><i class="fab fa-instagram"></i><span class="rs">Instagram</span></a></li>
+            </ul>
+
+            <ul id="footerInfo">
+                <h3>More info :</h3>
+                <li><a href="" alt="Lorem">About us</a></li>
+                <li><a href="" alt="Lorem">Contact US</a></li>
+                <li><a href="" alt="Lorem">Terms & Conditions</a></li>
+            </ul>
+
+            <div id="footerEmail">
+                <h3>Ne ratez rien</h3>
+                <br>
+                <div id="footerEmailInput">
+                    <input type="email" placeholder="Votre email">
+                    <button id="footerEmailValider"><i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div id="footerChild2">
+            <hr>
+            <p>2020<sup>&copy;</sup> Tous droits réservés, The very best of Bordeaux est un xercice de la Wild Code
+                School</p>
+        </div>
+    </footer>
+
+    <!--End footer-->
+
+    <script>
+        
+        let btnForm = document.querySelector("#btnForm");
+        btnForm.addEventListener("click", function(){
+            alert("✉️ Vous recevez très bientôt de nos nouvelles")
+        });
+
+        let btnEmailValider = document.querySelector("#footerEmailValider");
+        btnEmailValider.addEventListener("click", function(){
+            alert("🎉 Merci pour votre inscription ")
+        });
+
+    </script>
+</body>
+
+</html>

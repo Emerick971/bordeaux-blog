@@ -1,0 +1,764 @@
+h2, h3{
+    text-align: center;
+    margin-bottom: 1em;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+/*CSS Menu*/
+#burger{
+    display: none;
+}
+
+nav{
+    background-color: #980D2B;
+    height: auto; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100vw !important;
+}
+
+.navbar-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-nav{
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0 30px;
+    list-style: none;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 20px;
+    list-style: none; 
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#logo{
+    height: auto;
+    width: 70%;
+}
+
+.btn{
+    cursor: pointer;
+    text-transform: none;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    border-radius: 20px;
+}
+.btn :hover{
+    color: gray;
+    text-decoration: none;
+}
+
+ul :hover{
+    color: black;
+    text-decoration: none;
+}
+
+.btn{
+    color: white;
+    border: white solid 2px;
+    margin-left: 20px;
+    background-color: white;
+}
+
+.btn a{
+    color: #980D2B;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.btn a:hover{
+    color: white;
+}
+.btn:hover, .btn:active{
+    background-color: #980D2B !important;
+    color: white;
+    border: white solid 2px !important;
+}
+.categorie {
+    margin: 5% 0;
+}
+.card-title:hover{
+    color: #980D2B;
+}
+/* CSS Index - Carrousel */
+.w-100{
+    filter: brightness(0.50);
+}
+.carousel-caption {
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*bottom: 20% !important;*/
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.carousel-caption h5 {
+    font-family: Josefin Sans;
+    font-weight: 400;
+    padding-top: 50px;
+}
+
+#indxHdrLogo {
+    width: 400px !important;
+    height: auto;
+}
+
+.d-block {
+    opacity: 90%;
+}
+
+/* CSS Index - Categories */
+.emoji{
+    font-size: 4em;
+    text-align: center;
+    margin-bottom: -0.2em;
+}
+.subTitre{
+    text-align: center;
+    margin: 0;
+}
+
+.card{
+    border: none;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.16) ;
+    min-width: 280px;
+    margin-bottom: 15px!important;
+}
+.card:hover{
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.32) ;
+}
+
+.titreCards{
+    border-bottom: #980D2B solid 1px;
+    margin-bottom: 2em;
+}
+.card-title{
+    color: #262122;
+    font-weight: bold;
+}
+.card a:hover{
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.card-body div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.lienText{
+    color: #980D2B;
+    border-bottom: #980D2B solid 1px;
+    margin: 0;
+    width: auto;
+}
+
+.texteRed{
+    color: #980D2B;
+}
+
+
+/*END CSS Index - cards -sections */
+
+
+/*INFO PRACTIQUE*/
+#info{
+    background-color:#FDF7F9;
+    padding: 20px  ;
+    margin-bottom: 50px; 
+}
+
+.infoPrac{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2em;
+    padding-top: -60px;
+}
+
+
+/* CSS Index - Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #175676;
+    box-sizing: border-box;
+}
+
+#footerChild1 {
+    margin: 0 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#footerLogo {
+    opacity: 0.5;
+    width: 200px;
+    height: auto;
+    align-self: center !important;
+}
+
+#footerFollow,
+#footerInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 20px;
+}
+
+#footerFollow>li,
+#footerInfo>li {
+    list-style: none;
+}
+
+.fab {
+    padding-right: 10px;
+}
+
+.fab:hover {
+    padding-right: 10px;
+    color: white;
+    opacity: 0.7;
+}
+
+footer h3{
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 20px 0 0 0;
+    letter-spacing: 1px;
+    font-family: Josefin Sans;
+}
+
+footer h3:hover{
+    color: white;
+}
+
+footer a{
+    color: white;
+    opacity: 0.7;
+    font-size: 14px;
+    letter-spacing: 0.72px;
+    font-family: Josefin Sans;
+    font-weight: 300;
+}
+
+footer a:hover{
+    color: white;
+    opacity: 0.7;
+}
+
+
+#footerEmail {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+}
+
+#footerFollow>a {
+    font-size: 14px;
+    color: white;
+    opacity: 0.7;
+    padding:0;
+}
+
+#footerEmail {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#footerEmailInput {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+#footerEmailInput input{
+    margin-top: -10%;
+    border: solid 1px #2c2b2b;
+    border-radius: 4px 0px 0px 4px;
+    padding: 5px 10px;
+}
+
+#footerEmailInput input::placeholder{
+    font-size: 12px;
+}
+
+#footerEmailValider {
+    margin-top: -10%;
+    background-color: #980D2B;
+    border: solid 1px #2c2b2b;
+    border-radius: 0px 4px 4px 0px;
+    padding: 5px 10px;
+}
+
+.fas {
+    color: white;
+    padding: 5px;
+    font-size: 12px;
+}
+
+#footerChild2 {
+    margin: 0 15%;
+}
+
+#footerChild2>hr {
+    color: white;
+    opacity: 0.7;
+    border: 1px solid white;
+    margin: 20px 0 10px 0;
+
+}
+#footerChild2>p {
+    color: white;
+    opacity: 0.7;
+    font-size: 12px;
+    font-family: Josefin Sans;
+    font-weight: 200;
+}
+/*END CSS Index - Footer */
+
+/* DEBUT PAGE CONTACT */
+.input-group-text{
+    width: 80px;
+    display: block;
+    text-align: center;
+}
+#mapG{
+    width: 400px;
+}
+.btnNeg{
+    background-color: #980D2B ;
+    color: white;
+    font-family: Josefin Sans;
+    border: #980D2B solid 1px;
+    border-radius: 15px;
+    padding: 2px 15px;
+}
+.btnNeg:hover{
+    background-color:white ;
+    color: #980D2B;
+    font-family: Josefin Sans;
+    border: #980D2B solid 1px;
+    border-radius: 15px;
+    padding: 2px 15px;
+}
+#divTitleContact{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: #980D2B solid 1px;
+    margin-bottom: 2em;
+}
+
+#divFormsContactAdressMap{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#divContactAdressMap{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#divContactMap{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    padding-left: 0px;
+}
+
+#divContactMap p{
+    padding-right: 20px;
+}
+
+#divTitleTeam{
+    border-bottom: #980D2B solid 1px;
+    margin-bottom: 2em;
+}
+
+#divTeamCards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#divTeam{
+    padding-top: 50px;
+}
+
+.team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+}
+
+.teamImages {
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    filter: grayscale(100%);
+}
+
+.teamImagesSquare {
+    width: auto;
+    height: 100%;
+    
+}
+
+.teamImagesRec {
+    width: 100%;
+    height: auto;
+}
+
+#recadrageEmerick{
+    margin-top: -25px;
+}
+
+/* DEBUT RESPONSIVE SITE */
+
+/* Sur les écrans, quand la largeur de la fenêtre fait au minimum 1280px */
+@media screen and (min-width: 1280px){
+    .container{
+        max-width: 1200px;
+    }
+    #navbarSupportedContent1{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    nav{
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navbar-nav{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+/* Sur les écrans, quand la largeur de la fenêtre est comprise entre 992px et 1280px */
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    /*Menu*/
+    #navbarSupportedContent1{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav ul li{
+        display: inline-block;
+        margin: 0 12px;
+        list-style: none;
+    }
+
+    #logo{
+        height: auto;
+        width: 150px;
+    }
+
+    nav ul li a{
+        color: white;
+        font-size: 17px;
+        list-style: none; 
+        text-decoration: none;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+
+    .btn{
+        display: inline-block;
+        
+    }
+
+    /*Footer*/
+    #footerChild1 {
+        margin: 0 5%;
+    }
+    #footerChild2 {
+        margin: 0 5%;
+    }
+    #footerLogo {
+        width: 150px;
+        height: auto;
+    }
+    footer h3{
+        font-weight: 400;
+        font-size: 16px;
+    }
+    
+    footer a{
+        font-size: 12px;
+        font-weight: 300;
+    }
+}
+
+/* Sur les écrans, quand la largeur de la fenêtre est comprise entre 768px et 992px */
+@media screen and (min-width: 768px) and (max-width: 992px){
+    
+    /*Menu*/
+    #burger{
+        display: initial;
+    }
+ 
+    #logo{
+        width: 130px;
+        height: auto;
+    }
+    
+    nav ul li{
+        display: inline-block;
+        margin: 0 10px;    
+    }
+
+    a.nav-link{
+        font-size: 10px;
+    }
+
+    nav ul li a{
+        font-size: 10px;
+    }
+    .btn{
+        font-size: 10px;
+    }
+
+
+    /*Fin Menu*/
+
+    /*Début contact*/
+    #divTitleContact{
+        align-items: center;
+    }  
+
+    #divContactAdressMap{
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #divContactMap{
+        flex-direction: column;
+        align-items: center;
+    }  
+
+    #divFormsContactAdressMap{
+        flex-direction: column-reverse;
+    }
+
+    #Forms{
+        width: 90%;
+    }
+
+    #divTeamCards{
+        flex-direction: column;
+        align-items: center;
+    }
+    /*fin contact*/
+
+    .card-deck{
+        flex-flow: row nowrap;
+        overflow: scroll;
+        justify-content: flex-start;
+    }
+
+    /*Footer */
+    #footerChild1 {
+        margin: 0 10px;
+    }
+
+    #footerChild2 {
+        margin: 0 2%;
+    }
+
+    #footerLogo {
+        width: 125px;
+        height: auto;
+    }
+
+    footer h3{
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    footer a{
+        font-size: 12px;
+        font-weight: 300;
+    }
+}
+
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 768px */
+@media screen and (max-width: 768px){
+    /*Menu*/
+    #burger{
+        display: initial;
+    }
+    #logo{
+        width: 100px;
+        height: auto;
+    }
+    
+    nav ul li{
+        display: inline-block;
+        margin: 0 10px;    
+    }
+
+    nav ul li a{
+        font-size: 10px;
+    }
+    .btn{
+        font-size: 10px;
+    }
+    /*Fin Menu*/
+    /* Carrousel*/
+    #indxHdrLogo {
+        width: 300px !important;
+        height: auto;
+    }
+
+    /*début contact*/
+    #divTitleContact{
+        align-items: center;
+    }  
+
+    #divContactAdressMap{
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #divContactMap{
+        flex-direction: column;
+        align-items: center;
+    }  
+
+    #divFormsContactAdressMap{
+        flex-direction: column-reverse;
+    }
+
+    #Forms{
+        width: 90%;
+    }
+
+    #divTeamCards{
+        flex-direction: column;
+        align-items: center;
+    }
+    /*fin contact*/
+  
+    /*Footer */
+    #footerChild1 {
+        margin: 0 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #footerChild2 {
+        margin: 0 2%;
+        align-self: center;
+    }
+    #footerLogo {
+        display: none;
+    }
+    footer h3{
+        display: none;
+    }
+    .rs{
+        display: none
+    }
+    #footerFollow{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 30px;
+    }
+    .fab {
+        font-size: 20px;
+        padding: 20px;
+    }
+    #footerInfo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 10px;
+    }
+
+    #footerInfo li{
+        padding: 0 10px 20px 10px;
+    } 
+    footer a{
+        font-size: 12px;
+        font-weight: 300;
+    }
+    #footerEmailInput {
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    .emoji{
+        font-size: 2em;
+    }
+    h2{
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 440px){
+
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn{
+    margin-left: 0;
+}
+}
